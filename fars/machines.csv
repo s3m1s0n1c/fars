@@ -1,0 +1,17 @@
+id,id_str,name,description,icon,public,forward_limit_days,length_limit_hours,metadata_form,hidden,bill_device_id
+1,W1,Washing Machine 1,Washing Machine 1,tf.svg,1,0,2,NULL,0,NULL
+2,W2,Washing Machine 2,Washing Machine 2,tf.svg,1,0,2,NULL,0,NULL
+3,W3,Washing Machine 3,Washing Machine 3,tf.svg,1,0,2,NULL,0,NULL
+4,W4,Washing Machine 4,Washing Machine 4,tf.svg,1,0,2,NULL,0,NULL
+5,W5,Washing Machine 5,Washing Machine 5,tf.svg,1,0,2,NULL,0,NULL
+6,W6,Washing Machine 6,Washing Machine 6,tf.svg,1,0,2,NULL,0,NULL
+7,W7,Washing Machine 7,Washing Machine 7,tf.svg,1,0,2,NULL,0,NULL
+8,W8,Washing Machine 8,Washing Machine 8,tf.svg,1,0,2,NULL,0,NULL
+9,W9,Washing Machine 9,Washing Machine 9,tf.svg,1,0,2,NULL,0,NULL
+10,W10,Washing Machine 10,Washing Machine 10,tf.svg,1,0,2,NULL,0,NULL
+11,W11,Washing Machine 11,Washing Machine 11,tf.svg,1,0,2,NULL,0,NULL
+12,W12,Washing Machine 12,Washing Machine 12,tf.svg,1,0,2,NULL,0,NULL
+13,W13,Washing Machine 13,Washing Machine 13,tf.svg,1,0,2,NULL,0,NULL
+14,W14,Washing Machine 14,Washing Machine 14,tf.svg,1,0,2,NULL,0,NULL
+15,W15,Washing Machine 15,Washing Machine 15,tf.svg,1,0,2,NULL,0,NULL
+16,W16,Washing Machine 16,Washing Machine 16,tf.svg,1,0,2,NULL,0,NULL

@@ -26,12 +26,12 @@ PROJECT_DIR = os.path.dirname(__file__)
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env('SECRET_KEY', 'secret_key')
+SECRET_KEY = env('SECRET_KEY', ']7"EW-96PNbf^5MUyv<n0wJJ$J2~G&')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG', True)
 
-ALLOWED_HOSTS = env('ALLOWED_HOSTS', 'localhost').split(" ")
+ALLOWED_HOSTS = env('ALLOWED_HOSTS','*').split(" ")
 
 # Application definition
 
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'booking',
     'tabletpage',
+    'dashboardpage',
     'rest_framework',
     'django_filters',
     'bootstrap4',
@@ -135,12 +136,12 @@ LOGIN_REDIRECT_URL = 'home'
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 
-LANGUAGE_CODE = env('LANGUAGE_CODE', 'sv')
+LANGUAGE_CODE = env('LANGUAGE_CODE', 'en')
 LOCALE_PATHS = [
     PROJECT_DIR + '/../locale',
 ]
 
-TIME_ZONE = 'Europe/Helsinki'
+TIME_ZONE = 'Europe/London'
 
 USE_I18N = True
 
@@ -148,16 +149,18 @@ USE_L10N = True
 
 USE_TZ = True
 
-DATETIME_FORMAT = 'Y-m-d, H:i'
+DATETIME_FORMAT = 'd-m-Y, H:i'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR,'booking/static')
-STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR,'/booking/static')
+STATIC_URL = '/booking/static/'
 
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend',)
 }
+#LINES = 'staticfiles'
+LINES = 'inlinefiles'
 
 # LDAP stuff
 

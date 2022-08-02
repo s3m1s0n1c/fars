@@ -135,7 +135,7 @@ class Booking(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     start = models.DateTimeField(_("start"))
     end = models.DateTimeField(_("end"))
-    comment = models.CharField(_("comment"), max_length=128)
+    comment = models.CharField(_("name"), max_length=128)
     repeatgroup = models.ForeignKey(RepeatedBookingGroup, blank=True, null=True, on_delete=models.CASCADE, default=None)
     metadata = models.CharField(max_length=256, blank=True, null=True, default=None)
     booking_group = models.ForeignKey(Group, blank=True, null=True, on_delete=models.SET_NULL)

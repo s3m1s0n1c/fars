@@ -6,7 +6,7 @@
   {% load i18n %}
   {% get_current_language as language_code %}
 
-  <title>{% block title %}FARS{% endblock %}</title>
+  <title>{% block title %}GLM Laundry Room{% endblock %}</title>
   <link rel="shortcut icon" type="image/png" href="{% static "favicon.png" %}"/>
   <!-- For calendar -->
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -30,7 +30,7 @@
       {% elif bookable %}<!-- Month view -->
         <a href="{% url 'home' %}" class="navbar-brand">{{ bookable.name }}</a>
       {% else %}<!-- Other -->
-        <a href="{% url 'home' %}" class="navbar-brand">FARS</a>
+        <a href="{% url 'home' %}" class="navbar-brand">GLM Laundry Room</a>
       {% endif %}
       {% if user.is_authenticated %}
         <span class="nav-item">
@@ -58,7 +58,7 @@
     <div class="container">
       <div class="row justify-content-center">
         {% for bookable in bookables %}
-        <div class="text-center" style="margin:1em 1em;">
+        <div id="vacancyindicator" class="text-center" style="margin:1em 1em;">
           <a class="btn btn-light btn-outline-secondary" href="/booking/{{bookable.id_str}}">
             <img src="{% static "img/"|add:bookable.icon %}" alt="Bookable Icon" width="150" height="120" style="margin:1em;"></img>
             <p>{{bookable.name}}</p>
@@ -77,5 +77,6 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/locale/{{language_code}}.js"></script>
   <script src="//cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
   <script src="{% static 'js/bookable.js' %}"></script>
+  <script src="{% static 'js/tablet.js' %}"></script>
 </body>
 </html>

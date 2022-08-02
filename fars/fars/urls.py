@@ -27,5 +27,6 @@ urlpatterns = [
     url(r'^api/', include('api.urls')),
     path('booking/', include('booking.urls')),
     path('tablet/', include('tabletpage.urls')),
+    path('dashboard/', include('dashboardpage.urls')),
     path('', RedirectView.as_view(url='booking/')),
 ]
